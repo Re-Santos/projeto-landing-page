@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display:flex;
+    background-color: blueviolet;
+    height: 10vh;
+}
+ul{
+    display:flex;
+    
+}
+li{
+    display:flex;
+    
+   
+}
+main{
+    background-color: aqua;
+    height: 70vh;
+}
+footer{
+    display: flex;
+    flex-direction: column: 1fr 1fr 1fr 1fr;
+    background-color: yellow;
+    height: 20vh;
+}
+footer li{
+    display:flex;
+    flex-direction: row: 4;
+}
