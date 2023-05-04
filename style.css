@@ -2,82 +2,248 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+ 
 }
 body{
-   
-}
-main{
-    background-color: aqua;
-    height: 40vh;
-
-}
-.class content{
-    display:flex;
-    width: 100vw;
-    height: 100vh;
+    font-family: 'Montserrat', sans-serif;   
 }
 
+.content{
+    height: 600vh;
+    width: 100%;
+    /* background: rgb(253,213,29);
+    background: radial-gradient(circle, rgba(253,213,29,1) 0%, rgba(253,106,34,0.7847514005602241) 49%, rgba(252,176,69,1) 100%); */
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(252,162,76,1) 54%, rgba(255,255,255,1) 99%);
+}
 header{
     display:flex;
-    background-color:#ff904b;
-    height: 10vh;
-}
-ul{
-    display:flex;
-    
-}
-li{
-    display:flex;
-    line-height: 90px;
-    padding-left: 80px;
-    padding-right: 100px;
-
-}
-
-.banner-p{
-    /* columns: 2; */
-    background-image: url(img/capa.jpg);
-    padding-top: 13%;
-    background-position: 100%;
-    background-repeat: no-repeat;
+    background: rgb(253,213,29);
+    background: radial-gradient(circle, rgba(253,213,29,1) 0%, rgba(253,106,34,0.7847514005602241) 49%, rgba(252,176,69,1) 100%);
+    /* background-color:#ff904b; */
+    font-weight: 600;
+    font-size: 25px;
+    height: 13vh;
     width: 100%;
-    height: 100%;
-   
+  
+}
+.logo-oficial{
+    display: flex;
+    margin-right: 20%;
+}
+nav ul{
+    display:flex;
+}
+nav li{
+    display:flex;
+    color:#696969;
+    padding-top:2.5%;
+    padding-left: 75px;
+    padding-right: 75px;
+    cursor: pointer;
+}
+nav li:hover{
+    color:white;
+    text-decoration: underline;
 }
 
-.banner-p p{
-    color: white;
-    
-    font-size: 25px; 
-    margin-left: 10%;
-    padding-top: 10%;
+.button{
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    background: color #4f4f4f;
+    color: #4f4f4f;;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 4s;
+    margin-top: 2%;
+    margin-right: 10px;
+}
+
+h1{
+    font-size: 80px;
+    padding-left: 5%;
+    color:orangered;
+}
+.banner-p{
+
+    padding-top: 5%;
+    background-image: url(img/profile-pic.jpg);
+    background-position: 95% 95%;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+} 
+
+
+ .banner-p p{
+    color:orangered;
+    font-size: 40px; 
+    margin-left: 2%;
     align-items: center;
-    
+    padding-top:8%;
+    margin-top:5%  
 }
 .banner-p span{
     display: block;
     margin-top: 3%;
-    margin-left: 15%;
+    margin-left: 2%;
+    margin-top: 8%;
 }
-/* figure img{
+ 
+.cartao{
+    display:flex;
+    flex-direction: column(3);
+    column-gap: 5%;
+    margin-top: 8%;
     width: 100%;
-    height: vh;
-    border-radius: 6px;
-    border: dotted white;
-     */
-
-
-section pra-voce{
-    background-color:white;
-    height:20vh ;
+    height: 100vh;
 }
-footer{
+.card-1{
     display: flex;
-    flex-direction: column: 1fr 1fr 1fr 1fr;
-    background-color: yellow;
+    width:70vw;
+    height: 60vh;
+    justify-content: center;
+    padding-top:2%;
+    padding-left:3%;
+    
+}
+
+.card-2{
+    display: flex;
+    width:65vw;
+    height: 56vh;
+    background-color: white;
+    justify-content: center;
+    margin-top: 2%;
+    font-size:25px;
+    line-height: 85px;
+    padding-left: 35px;
+}
+
+.card-2 h3{
+    text-align: center;
+    color:orangered;
+}
+
+.card-3{
+    display: flex;
+    width:70vw;
+    height: 60vh;
+    justify-content: center;
+    padding-top:2%;
+} 
+
+.pra-voce{
+    display: flex;
+    columns: 3;
+    column-gap: 3%;
+    background-color: white;
+    height: 70vh;
+    margin-top: -8%;
+    width: 100%;
+    height: 100vh;
+}
+.for-you h1{
+    
+    margin: left 0;
+}
+.for-you p{
+    margin-top:10%;
+    margin-left: 5%;
+    line-height:80px;
+    width:70vh;
+    height: 40vh;
+    font-size: 50px;
+    padding-left:5%;
+   
+}
+
+.text-for-you{
+    margin-top:10%;
+    width:70vh;
+    height: 45vh;
+    background-color: #f9ddaa;
+
+}
+.img-for-you{
+    display: flex;
+    width:70vh;
+    height: 65vh;
+    
+}
+.f-bank{
+    background-color:white;
+    height: 100vh;
+   
+}
+
+.f-bank h1{
+    margin: left 0;
+}
+.f-bank p,ul{
+    font-size: 25px;
+    line-height: 70px;
+    padding-left: 30px;
+    list-style: none;
+}
+.beneficios{
+    background-color:white;
+    height: 100vh;
+}
+.cards-beneficios{
+    display: flex;
+    flex-direction: column(3);
+    column-gap: 80px;
+    padding: 30px;
+    width: 100%;
+    font-size: 25px;
+    
+}
+.banner-oficial{
+    background-image: url(img/barra-orange.jpg);
     height: 20vh;
 }
-footer li{
-    display:flex;
-    flex-direction: row: 4;
+.logo-of{
+    
+    border-radius: 500px;
+    align-items: center;
+    
+}
+.contato{
+    background-color:white;
+    height:80vh;
+
+}
+.footer-content{
+    display: flex;
+    flex-direction: column(3);
+    column-gap:15%;
+    margin-top: -10%;
+    font-size: 18px;  
+    background-color:#7f90aa ;
+    height: 60vh;
+   
+}
+.help{
+    padding-left: 5px; 
+    padding-top: 2%;    
+}
+.help ul{
+    font-size: 18px;
+}
+.numbers{
+    padding-left: 5px;
+    padding-top: 2%;
+}
+.numbers ul{
+    font-size: 18px;
+}
+.social-media{
+    padding-left: 5px; 
+    padding-top: 2%;
+}
+.social-media ul{
+    font-size: 18px;
 }
