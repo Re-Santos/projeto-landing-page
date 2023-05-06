@@ -8,20 +8,29 @@ body{
     font-family: 'Montserrat', sans-serif;   
 }
 
-.content{
-    height: 600vh;
-    width: 100%;
-    background-color: #FFFAF0;
-}
-
 header{
     display:flex;
     background: rgb(253,213,29);
     background: radial-gradient(circle, rgba(253,213,29,1) 0%, rgba(253,106,34,0.7847514005602241) 49%, rgba(252,176,69,1) 100%);
     font-weight: 600;
     font-size: 25px;
-    height: 13vh;
+    /* height: 13vh;
     width: 100%;
+    position: sticky;   
+    top: 0;
+    padding: 10px 16px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+   
+   
+}
+.content{
+    height: 600vh;
+    width: 100%;
+    background-color: #FFFAF0;
 }
 
 .logo-oficial{
@@ -29,11 +38,11 @@ header{
     margin-right: 20%;
 }
 
-nav ul{
+.navigation ul{
     display:flex;
 }
 
-nav li{
+.navigation li{
     display:flex;
     color:#696969;
     padding-top:2.5%;
@@ -42,9 +51,18 @@ nav li{
     cursor: pointer;
 }
 
-nav li:hover{
+.navigation li:hover{
     color:white;
     text-decoration: underline;
+}
+
+.navigation .menu-icon{
+    display:none;
+}
+
+.navigation li.menu-icon:hover{
+    color:#f27609;
+    cursor: pointer;
 }
 
 .button{
@@ -78,7 +96,6 @@ h1{
     animation-name:banner-f4;
     animation-duration: 4s;
 } 
-
 
  .banner-p p{
     color:orangered;
@@ -272,13 +289,16 @@ h1{
     height: 100vh;
 }
 
+
 .cards-beneficios{
     display: flex;
-   
     column-gap: 80px;
     padding: 30px;
     width: 100%;
     font-size: 25px;
+    transition: 1s;
+
+
 }
 
 .pix{
@@ -287,10 +307,18 @@ h1{
     height: 65vh;
 }
 
+.pix:hover{
+    transform: scale(1.02);
+}
+
 .saque{
     display: flex;
     width:70vh;
     height: 65vh;
+}
+
+.saque:hover{
+    transform: scale(1.02);
 }
 
 .credito{
@@ -299,13 +327,16 @@ h1{
     height: 65vh;
 }
 
+.credito:hover{
+    transform: scale(1.02);
+}
+
 .banner-oficial{
     background-image: url(img/barra-orange.jpg);
     height: 20vh;
 }
 
 .logo-of{
-    
     border-radius: 500px;
     align-items: center;
 }
@@ -376,11 +407,89 @@ a:hover{
     color:white;
 }
 
-@keyframes banner-p-f4{;
+@keyframes banner-p-f4{
     0% {opacity:0;transform:translate(0px,20px)}
     100%{opacity:1;transform:translate(0px,0px)}
 }
 @keyframes banner-f4{
     0% {opacity:0; transform:translate(-20px,0px)}
     100%{opacity:1; transform:translate(0px,0px)}
+}
+
+@media screen and (max-width: 1360px){
+
+header{
+    display:none;
+    font-size: 15px;
+}
+.banner-p{
+
+    padding-top: 8%;
+    background-image: url(img/profile-pic.jpg);
+    background-position: 80% 80%;
+   
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+
+    animation-name:banner-f4;
+    animation-duration: 4s;
+} 
+.cartao{
+    display:block;
+    height: 110vh;
+}
+ 
+.card-3{
+    margin-top:5%;
+}
+.pra-voce{
+    display:block;
+    flex-direction: column(1fr);
+    background-color: white;
+    height: 200vh;
+    margin-top: 100%;
+    width: 100%;
+    
+}
+.f-bank{
+    display:flex;
+    display: block;
+    background-color:#FFFAF0;
+    height: 200vh;
+    justify-content: left;
+}
+
+.img-bank{
+    display:none;
+}
+
+.beneficios{
+    display:flex;
+    display:block;
+    flex-direction: column(3);
+    background-color:white;
+    height: 220vh;
+}
+.cards-beneficios{
+    display: block;
+    padding: 30px;
+    width: 100%;
+    font-size: 25px;
+    height: 80vh;
+}
+
+.contato{
+    display:block;
+    width:30vw ;
+    background-color:white;
+    height:100vh;
+    
+}
+
+.duvida{
+    display:none;
+}
+
+
 }
