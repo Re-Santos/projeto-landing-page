@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.google.com/share?selection.family=Montserrat:100,400"  rel="stylesheet">
     <title>F4BANK</title>
 </head>
-<body>
+
+    <div class="content">
+        <header>
+            <div class="logo-oficial">
+                <img src="img/logo-oficial.jpg" alt="logo F4Bank">
+            </div>
+            <div id="navigation" class="navigation">
+                <ul>
+                    <li><a href="#pra-voce">Pra você</a></li>
+                    <li><a href="#f-bank">F4Bank</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li id="menu-icon" class="menu-icon" onclick="openNav()">&#9776;</li>
+                </ul>
+            </div>
+            <button class="button">Abra Sua Conta</button>
+
+        </header>
+            <section id="capa-bank">
+                <div class="banner-p">
+                    <h1> F4BANK </h1>
+                    <p>Sua conta digital gratuita <span>Tradição e inovação no seu bolso</span></p>
+                
+                </div>
+                <div class="cartao">
+                    <div class="card-1">
+                        <img src="img/cartões.jpg.png">
+                    </div>
+                    <div class="card-2">
+                        <ul>
+                            <h3>Orange Cartões</h3>
+                            <li>
+                                Sem taxas de transações.
+                            </li>
+                            <li>
+                                Ampla rede de caixa eletrônicos para saques em dinheiro gratuitos.
+                            </li>
+                            <li> 
+                                Transações seguras e protegidas.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-3">
+                        <img src="img/imagem-casal.jpg">
+                    </div>
+                </div>
+            </section>
+           
+
+        <main>
+
     <header>
         <img src="img/logo-oficial.jpg" alt="logo F4Bank">
         <nav>
@@ -56,35 +109,105 @@
             </div>
         </div>
 
-    </main>
-    <footer>
-        <div class="help">
-            <h3>Posso Ajudar</h3>
-            <ul>
-                <li>Canais F4Bank</li>
-                <li>Ouvidoria</li>
-                <li>Blog</li>
-            </ul>
-               
+
+        <div class="main-content">
+
+            <div id="pra-voce" class="pra-voce">
+                
+                <div class= "for-you">
+                    <h1>Pra Você</h1>
+                    <p>Simplifique sua vida:<br>
+                        <span>+ </span>Praticidade<br>
+                        <span>+ </span> Segurança<br>
+                        <span>- </span> Burocracia
+                    </p>
+                </div>
+                <div class="text-for-you">
+                    <p>O banco <strong><span>F4BANK</span></strong> oferece uma gama de produtos e serviços a seus clientes, incluindo empréstimos, cartões de crédito, contas de poupança e oportunidades de investimento.</p>
+                </div>
+                <div class="img-for-you">
+                    <img src="img/imagem-moca.jpg">
+                </div>
+                
+            </div>
+            <!-- <div class="card-content">
+                <div class="card-for-you">
+                    <div class="card "><img src="img/orange-poupe.jpg.png">Sua poupança segura</div>
+                    <div class="card "><img src="img/cartao.jpg.jpeg">Seu cartão sem anuidade</div>
+                    <div class="card "><img src="img/7.png">Sua casa própria sem burocracia</div>
+                </div>
+            </div> -->
+            <div id="f-bank" class="f-bank">
+                <div class="text-bank">
+                    <h1>F4Bank</h1>
+                    <p>
+                        O <strong><span>F4BANK</span></strong> é um banco digital que oferece serviços bancários on-line convenientes e fáceis de usar para seus clientes. Todo o processo de utilização do <strong><span>F4BANK</span></strong>  é direto e simples, com soluções oferecidas por meio de terminais de Captura de Transações, Banco Digital e Links de Pagamento. A plataforma de banco on-line foi projetada para ser fácil de navegar, tornando-a acessível a clientes de todas as idades e habilidades técnicas. Essa abordagem amigável ao banco permite que os clientes gerenciem suas finanças com facilidade e eficiência.
+                    </p>
+                </div>
+                <div class="img-bank">
+                    <img src="img/imagem-cidade.jpg">
+                </div>
+                <button class="button-2">Abra Sua Conta</button>
+            </div>
+            <div id="beneficios" class="beneficios">
+                <h1>Benefícios</h1>
+                <div class="cards-beneficios">
+                        <div class="pix"><img src="img/pix.jpg">Transferências ilimitadas e gratuitas.</div>
+                
+                        <div class="saque"><img src="img/cxeletronico.jpg">Saque Sem cartão, escaneando o QR code no caixa 24h com o app.</div>
+                    
+                        <div class="credito"><img src="img/dinheiro.jpg">Crédito emergêncial pré aprovado.</div>
+                   
+                </div>
+            </div>
+            <div class="banner-oficial">
+                <div class="logo-of">
+                    <img src="img/logo-oficial.jpg" alt="logo F4Bank">
+                </div>
+            </div>
+            <div id="contato" class="contato">
+                <div class="form">
+                    <h1> Contato</h1>
+                    <form>
+
+                    </form>
+                </div>
+                <div class="duvida">
+                   <img src="img/contato.jpg.png">
+                </div>
+            </div>
         </div>
-        <div class="numbers">
-            <h3>Fale conosco</h3>
-            <ul>
-                <li>Capital e regiões metropolitanas</li>
-                <li>Demais Localidades</li>
-                <li>Sac</li>
-            </ul>
-        </div>
-        <div class="social-media>">
-            <h3>Siga-nos</h3>
-            <ul>
-                <li> <img src="img/Facebook.png" alt="Icone Facebook"></li>
-                <li><img src="img/Instagram.png" alt="Icone Instagram"></li>
-                <li><img src="img/LinkedIn.png" alt="Icone Linkedin"></li>
-                <li><img src="img/Twitter.png" alt="Icone Twitter"></li>
-            </ul>
-        </div>
-    </footer>
-    
+
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="help">
+                    <h3>Posso Ajudar</h3>
+                    <ul>
+                        <li>Canais F4Bank</li>
+                        <li>Ouvidoria</li>
+                        <li>Blog</li>
+                    </ul>
+                    
+                </div>
+                <div class="numbers">
+                    <h3>Fale conosco</h3>
+                    <ul>
+                        <li>Capital e regiões metropolitanas</li>
+                        <li>Demais Localidades</li>
+                        <li>Sac</li>
+                    </ul>
+                </div>
+                <div class="social-media>">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="img/Facebook.png" alt="Icone Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img src="img/Instagram.png" alt="Icone Instagram"></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank"><img src="img/LinkedIn.png" alt="Icone Linkedin"></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

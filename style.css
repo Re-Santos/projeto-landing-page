@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;   
+}
+
+header{
+    display:flex;
+    background: rgb(253,213,29);
+    background: radial-gradient(circle, rgba(253,213,29,1) 0%, rgba(253,106,34,0.7847514005602241) 49%, rgba(252,176,69,1) 100%);
+    font-weight: 600;
+    font-size: 25px;
+    /* height: 13vh;
+    width: 100%;
+    position: sticky;   
+    top: 0;
+    padding: 10px 16px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+   
+   
+}
+.content{
+    height: 600vh;
+    width: 100%;
+    background-color: #FFFAF0;
+}
+
+.logo-oficial{
+    display: flex;
+    margin-right: 20%;
+}
+
+.navigation ul{
+    display:flex;
+}
+
+.navigation li{
+    display:flex;
+    color:#696969;
+    padding-top:2.5%;
+    padding-left: 75px;
+    padding-right: 75px;
+    cursor: pointer;
+}
+
+.navigation li:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.navigation .menu-icon{
+    display:none;
+}
+
+.navigation li.menu-icon:hover{
+    color:#f27609;
+    cursor: pointer;
+}
+
+.button{
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    background: color #4f4f4f;
+    color: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 4s;
+    margin-top: 2%;
+    margin-right: 10px;
+}
+
+h1{
+    font-size: 80px;
+    padding-left: 5%;
+    color:orangered;
+}
+.banner-p{
+
+    padding-top: 8%;
+    background-image: url(img/profile-pic.jpg);
+    background-position: 95% 95%;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+
+    animation-name:banner-f4;
+    animation-duration: 4s;
+} 
+
+ .banner-p p{
+    color:orangered;
+    font-size: 40px; 
+    margin-left: 2%;
+    align-items: center;
+    padding-top:8%;
+    margin-top:5%;
+
+    animation-name:banner-p-f4;
+    animation-duration: 2s;
+}
+.banner-p span{
+    display: block;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-top: 8%;
+}
+ 
+.cartao{
+    display:flex;
+    flex-direction: column(3);
+    column-gap: 5%;
+    margin-top: 8%;
+    width: 100%;
+    height: 100vh;
+}
+.card-1{
+    display: flex;
+    width:70vw;
+    height: 60vh;
+    justify-content: center;
+    padding-top:2%;
+    padding-left:3%;
+    
+}
+
+.card-2{
+    display: flex;
+    width:65vw;
+    height: 56vh;
+    background-color: white;
+    justify-content: center;
+    margin-top: 2%;
+    font-size:25px;
+    line-height: 85px;
+    padding-left: 35px;
+}
+
+.card-2 h3{
+    text-align: center;
+    color:orangered;
+}
+
+.card-3{
+    display: flex;
+    width:70vw;
+    height: 60vh;
+    justify-content: center;
+    padding-top:2%;
+} 
+
+.pra-voce{
+    display: flex;
+    flex-direction: column(1fr 1fr 1fr);
+    flex-direction: row(2);
+    column-gap: 3%;
+    background-color: white;
+    height: 70vh;
+    margin-top: -8%;
+    width: 100%;
+    height: 70vh;
+}
+.for-you h1{
+    
+    margin-left: 45px;
+}
+.for-you p{
+    margin-top:10%;
+    margin-left: 5%;
+    line-height:80px;
+    width:70vh;
+    height: 40vh;
+    font-size: 50px;
+    padding-left:5%;
+   
+}
+
+.text-for-you{
+    font-size: 25px;
+    line-height: 70px;
+    padding-left: 30px;
+    list-style: none;
+    margin-top: 9%;
+}
+
+.text-for-you span{
+    color:#ff904b;
+}
+
+.card-content{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top: 50px;
+}
+
+.card-for-you{
+    width:100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    row-gap:20px;
+    column-gap:20px;
+    
+}
+
+.card {
+    width: 100%;
+    margin-left: 10%;
+    background-size:cover;
+    background-position: 90% 90%;
+    border-radius:5px;
+    cursor:pointer;
+    transition:1s;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:0 0 20px 10px;
+    color:orangered;
+    font-size:20px;
+}
+
+.img-for-you{
+    display: flex;
+    width:70vh;
+    height: 65vh;
+    
+}
+
+.f-bank{
+    display:flex;
+    display: block;
+    background-color:#FFFAF0;
+    height: 100vh;
+    justify-content: center;
+}
+
+.img-bank{
+    display:flex;
+    width:70vh;
+    height: 50vh;
+    margin-left: 70%;
+}
+
+.button-2{
+    width:300px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    background: color #4f4f4f;
+    color:black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-2:hover{
+    background-color: #ff904b;
+}
+
+.text-bank span{
+    color:#ff904b;
+}
+
+.f-bank h1{
+    margin: left 0;
+
+}
+
+.f-bank p,ul{
+    font-size: 25px;
+    line-height: 70px;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.beneficios{
+    display:flex;
+    display:block;
+    flex-direction: column(3);
+    background-color:white;
+    height: 100vh;
+}
+
+
+.cards-beneficios{
+    display: flex;
+    column-gap: 80px;
+    padding: 30px;
+    width: 100%;
+    font-size: 25px;
+    transition: 1s;
+
+
+}
+
+.pix{
+    display: flex;
+    width:70vh;
+    height: 65vh;
+}
+
+.pix:hover{
+    transform: scale(1.02);
+}
+
+.saque{
+    display: flex;
+    width:70vh;
+    height: 65vh;
+}
+
+.saque:hover{
+    transform: scale(1.02);
+}
+
+.credito{
+    display: flex;
+    width:70vh;
+    height: 65vh;
+}
+
+.credito:hover{
+    transform: scale(1.02);
+}
+
+.banner-oficial{
+    background-image: url(img/barra-orange.jpg);
+    height: 20vh;
+}
+
+.logo-of{
+    border-radius: 500px;
+    align-items: center;
+}
+
+.contato{
+    display:flex;
+    width:90vw ;
+    columns: 2;
+    column-gap: 55%;
+    background-color:white;
+    height:80vh;
+    margin-left: 45px;
+}
+
+.duvida{
+    display: flex;
+    width:10vw;
+    height: 59vh;   
+    margin-right:20%;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column(3);
+    column-gap:15%;
+    margin-top: -10%;
+    font-size: 18px;  
+    background-color:#7f90aa ;
+    height: 60vh; 
+}
+
+.help{
+    padding-left: 5px; 
+    padding-top: 2%;    
+}
+
+.help ul{
+    font-size: 18px;
+}
+
+.numbers{
+    padding-left: 5px;
+    padding-top: 2%;
+}
+
+.numbers ul{
+    font-size: 18px;
+}
+
+.social-media{
+    padding-left: 5px; 
+    padding-top: 2%;
+}
+
+.social-media ul{
+    font-size: 18px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    color:#696969;
+}
+
+a:hover{
+    color:white;
+}
+
+@keyframes banner-p-f4{
+    0% {opacity:0;transform:translate(0px,20px)}
+    100%{opacity:1;transform:translate(0px,0px)}
+}
+@keyframes banner-f4{
+    0% {opacity:0; transform:translate(-20px,0px)}
+    100%{opacity:1; transform:translate(0px,0px)}
+}
+
+@media screen and (max-width: 1360px){
+
+header{
+    display:none;
+    font-size: 15px;
+}
+.banner-p{
+
+    padding-top: 8%;
+    background-image: url(img/profile-pic.jpg);
+    background-position: 80% 80%;
+   
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+
+    animation-name:banner-f4;
+    animation-duration: 4s;
+} 
+.cartao{
+    display:block;
+    height: 110vh;
+}
+ 
+.card-3{
+    margin-top:5%;
+}
+.pra-voce{
+    display:block;
+    flex-direction: column(1fr);
+    background-color: white;
+    height: 200vh;
+    margin-top: 100%;
+    width: 100%;
+    
+}
+.f-bank{
+    display:flex;
+    display: block;
+    background-color:#FFFAF0;
+    height: 200vh;
+    justify-content: left;
+}
+
+.img-bank{
+    display:none;
+}
+
+.beneficios{
+    display:flex;
+    display:block;
+    flex-direction: column(3);
+    background-color:white;
+    height: 220vh;
+}
+.cards-beneficios{
+    display: block;
+    padding: 30px;
+    width: 100%;
+    font-size: 25px;
+    height: 80vh;
+}
+
+.contato{
+    display:block;
+    width:30vw ;
+    background-color:white;
+    height:100vh;
+    
+}
+
+.duvida{
+    display:none;
+}
+
+
+}
